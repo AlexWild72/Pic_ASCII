@@ -1,0 +1,48 @@
+import random
+
+# Примеры ASCII-рисунков
+ascii_art = [
+    """
+     🌲🌲🌲
+      🌲🌲
+       🌲
+      /|\\
+     / | \\
+    """,
+    """
+     .--.
+    |o_o |
+    |:_/ |
+   //   \\ \\
+  (|     | )
+ /'\\_   _/`\\
+ \\___)=(___/
+    """,
+    """
+      /\_/\\
+     ( o.o )
+      > ^ <
+    """,
+    """
+      _______
+     /       \\
+    |  o   o  |
+    |    ^    |
+     \\_______/
+    """,
+    """
+    _   _
+   (o)_(o)
+  (   _   )
+   \\\\_\\\\-//_//
+    """
+]
+
+def generate_ascii_art():
+    """Returns a random piece of ASCII art."""
+    return random.choice(ascii_art)
+
+# Генерация и вывод случайного ASCII-рисунка
+if __name__ == "__main__":
+    print("Random ASCII Art Generator:")
+    print(generate_ascii_art())
